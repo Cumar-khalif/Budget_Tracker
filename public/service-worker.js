@@ -1,5 +1,4 @@
 const FILES_TO_CACHE = [
-    // Add cache files here
     "/",
     "./manifest.json",
     "./index.html",
@@ -41,7 +40,6 @@ self.addEventListener("activate", function(evt) {
     self.clients.claim();
 });
 
-// Add event for fetch
 self.addEventListener("fetch", function(evt) {
     if (evt.request.url.includes("/api/")) {
         evt.respondWith(
@@ -61,7 +59,7 @@ self.addEventListener("fetch", function(evt) {
         );
         return;
     }
-// Add event for respondWith
+
     evt.respondWith(
         caches.open(CACHE_NAME).then(cache => {
           return cache.match(evt.request).then(response => {
