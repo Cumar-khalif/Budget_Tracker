@@ -3,7 +3,7 @@ const logger = require("morgan");
 const mongoose = require("mongoose");
 const compression = require("compression");
 // requiring dotenc
-require('dotenv').config();
+// require('dotenv').config();
 
 const PORT = process.env.PORT ||3000;
 
@@ -21,6 +21,7 @@ mongoose.connect("mongodb://localhost/budget", {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true,
+  useCreateIndex: true,
 });
 
 // routes
