@@ -23,4 +23,7 @@ When brought back online:
 
 Linkedln : https://www.linkedin.com/in/omar-sheikh-khalif-9352701b9/
 
+---
+© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+
 
